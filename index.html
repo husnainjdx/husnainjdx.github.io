@@ -11,11 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -30,7 +28,6 @@
         </a>
 
         <div class="nav-links">
-          <a href="#about">About</a>
           <a href="#summary">Summary</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
@@ -47,7 +44,10 @@
               rel="noreferrer"
               aria-label="LinkedIn"
             >
-              <ion-icon class="icon-btn-socials" name="logo-linkedin"></ion-icon>
+              <ion-icon
+                class="icon-btn-socials"
+                name="logo-linkedin"
+              ></ion-icon>
             </a>
             <a
               href="https://x.com/husnainjdx"
@@ -56,7 +56,10 @@
               rel="noreferrer"
               aria-label="X"
             >
-              <ion-icon class="icon-btn-socials" name="logo-x"></ion-icon>
+              <ion-icon
+                class="icon-btn-socials x-logo"
+                name="logo-x"
+              ></ion-icon>
             </a>
             <a
               href="https://github.com/HusnainJaved"
@@ -74,96 +77,166 @@
               rel="noreferrer"
               aria-label="Instagram"
             >
-              <ion-icon class="icon-btn-socials" name="logo-instagram"></ion-icon>
+              <ion-icon
+                class="icon-btn-socials"
+                name="logo-instagram"
+              ></ion-icon>
             </a>
           </div>
 
           <a
-            href="resume/Husnain-Javed-Resume.pdf"
+            href="#"
             class="resume-button"
-            download
-            aria-label="Download Husnain Javed resume"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Husnain Javed resume in a new tab"
+            onclick="
+              window.open(
+                'https://docs.google.com/gview?embedded=true&url=' +
+                  encodeURIComponent(
+                    window.location.origin +
+                      '/resume/Husnain%20Javed%20-%20Resume.docx',
+                  ),
+                '_blank',
+              );
+              return false;
+            "
           >
-            <ion-icon class="icon-btn-resume" name="receipt-outline"></ion-icon><span>Resume</span>
+            <ion-icon class="icon-btn-resume" name="receipt-outline"></ion-icon
+            ><span>Resume</span>
           </a>
         </div>
       </nav>
     </header>
 
     <main id="top">
-      <section class="fixed-panel container" aria-label="General container panel">
-        <div class="fixed-panel-inner ">hello, World</div>
-      </section>
+      <section
+        class="fixed-panel container"
+        aria-label="General container panel"
+      >
+        <div class="fixed-panel-inner">
+          <div class="fixed-panel-label">hello, World</div>
 
-      <section id="about" class="hero container">
-        <div class="hero-copy">
-          <p class="eyebrow">Software Engineering Student</p>
-          <h1>Husnain Javed</h1>
-          <p class="subtitle">
-            Building scalable web experiences and product-driven software that
-            turns ideas into working, measurable outcomes.
-          </p>
-          <div class="hero-actions">
-            <a href="#projects" class="primary-btn">View Projects</a>
-            <a href="#contact" class="secondary-btn">Contact Me</a>
-          </div>
-          <div class="meta-row">
-            <span>Based in Pakistan</span>
-            <span>Available for remote work</span>
-          </div>
-        </div>
-
-        <!-- <div class="hero-card" aria-label="Profile card">
-          <div class="avatar-wrap">
+          <div class="profile-spotlight" aria-label="Profile photo">
             <img
-              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80"
-              alt="Najam Iftikhar portrait"
+              src="img/20260821_173438.jpg"
+              alt="Husnain Javed profile portrait"
+              class="hero-profile-pic"
             />
           </div>
-          <div class="profile-details">
-            <p class="label">Current role</p>
-            <h2>Software Engineering Student</h2>
-            <p>COMSATS University Islamabad</p>
-          </div>
-          <div class="stats-grid">
-            <div>
-              <strong>4+</strong>
-              <span>Years</span>
-            </div>
-            <div>
-              <strong>25+</strong>
-              <span>Web apps</span>
-            </div>
-            <div>
-              <strong>48</strong>
-              <span>Client projects</span>
-            </div>
-          </div>
-        </div> -->
+        </div>
       </section>
 
-      <section id="summary" class="section container">
-        <div class="section-heading">
-          <p class="section-kicker">Summary</p>
-          <h2>Professional profile</h2>
+      <section class="profile-intro" aria-label="Profile introduction">
+        <div class="container-inner">
+          <div class="name-row">
+            <h2>Husnain Javed</h2>
+            <span class="verified-badge" aria-label="Verified"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
+                />
+              </svg>
+            </span>
+          </div>
+          <p class="profile-title">Software Engineering Student</p>
         </div>
-        <div class="content-card summary-card">
-          <p>
-            Software Engineering student at COMSATS University Islamabad (CGPA
-            3.94/4.00) with hands-on experience in C, Java, Python, and
-            full-stack web development using HTML, CSS, JavaScript, React, and
-            Supabase. Completed Harvard’s CS50 and built academic projects
-            spanning web applications and Java-based systems. Seeking
-            internships or research opportunities that offer technical depth,
-            international exposure, and collaborative team environments.
-          </p>
+      </section>
+
+      <section id="summary" class="summary-section">
+        <div class="container-inner">
+          <div class="section-heading">
+            <h2>Profile Summary</h2>
+          </div>
+          <div class="content-card summary-card">
+            <p>
+              Software Engineering student at COMSATS University Islamabad (CGPA
+              3.94/4.00) with hands-on experience in C, Java, Python, and
+              full-stack web development using HTML, CSS, JavaScript, React, and
+              Supabase. Completed Harvard’s CS50 and built academic projects
+              spanning web applications and Java-based systems. Seeking
+              internships or research opportunities that offer technical depth,
+              international exposure, and collaborative team environments.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section container">
+        <div class="container-inner">
+          <div class="section-heading">
+            <h2>Education</h2>
+          </div>
+
+          <div class="education-list">
+            <article class="education-card content-card">
+              <div class="education-primary">
+                <h3>COMSATS University Islamabad</h3>
+                <p class="summary-role">BS Software Engineering</p>
+              </div>
+              <div class="education-meta">
+                <strong>Feb 2026 - Present</strong>
+                <span>Current student</span>
+              </div>
+              <p class="education-details">
+                Current semester: 2nd semester.<br />
+                CGPA: 3.94 / 4.00.
+              </p>
+            </article>
+
+            <article class="education-card content-card">
+              <div class="education-primary">
+                <h3>Tameer-i-Wattan Public School and College</h3>
+                <p class="summary-role">Intermediate (F.Sc - Pre Medical)</p>
+              </div>
+              <div class="education-meta">
+                <strong>Aug 2022 - May 2024</strong>
+                <span>A+ Grade</span>
+              </div>
+              <p class="education-details">
+                Marks: 1105/1200 (92.08%).<br />
+                Merit Scholarship Recipient for 2 years.
+              </p>
+            </article>
+
+            <article class="education-card content-card">
+              <div class="education-primary">
+                <h3>IIUI Schools and Colleges</h3>
+                <p class="summary-role">Matriculation</p>
+              </div>
+              <div class="education-meta">
+                <strong>Mar 2020 - Apr 2022</strong>
+                <span>A+ Grade</span>
+              </div>
+              <p class="education-details">Marks: 969/1100 (88.09%).</p>
+            </article>
+
+            <article class="education-card content-card">
+              <div class="education-primary">
+                <h3>Wifaq-ul-Madaris Al Arabiya Pakistan</h3>
+                <p class="summary-role">Hifz-e-Quran</p>
+              </div>
+              <div class="education-meta">
+                <strong>2021</strong>
+                <span>A Grade</span>
+              </div>
+              <p class="education-details">Marks: 84/100 (84.00%).</p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section id="skills" class="section container">
         <div class="section-heading">
-          <p class="section-kicker">Skills</p>
-          <h2>Core expertise</h2>
+          <h2>Skills</h2>
         </div>
 
         <div class="skills-grid">
@@ -205,102 +278,107 @@
 
       <section id="projects" class="section container">
         <div class="section-heading">
-          <p class="section-kicker">Projects</p>
-          <h2>Selected work</h2>
+          <h2>Projects</h2>
         </div>
 
         <div class="projects-grid">
           <article class="project-card content-card">
             <div class="project-topline">
-              <span class="project-tag">Web App</span>
-              <span class="project-year">2024</span>
+              <span class="project-tag">Web Application</span>
             </div>
-            <h3>Lead Generation Platform</h3>
+            <h3>FactsHub</h3>
             <p>
-              Built a high-performance scraping and data enrichment platform
-              that collected 800K+ leads and improved outreach efficiency by
-              60%.
+              Developed a knowledge-sharing interactive web application for
+              sharing and exploring interesting facts and information.
             </p>
             <ul>
-              <li>Automation workflows</li>
-              <li>Data pipelines</li>
-              <li>Analytics dashboards</li>
+              <li>React, HTML, CSS, JavaScript</li>
+              <li>Likes, dislikes, and false-fact voting</li>
+              <li>Supabase backend and database</li>
             </ul>
           </article>
 
           <article class="project-card content-card">
             <div class="project-topline">
-              <span class="project-tag">MVP</span>
-              <span class="project-year">2023</span>
+              <span class="project-tag">Java</span>
             </div>
-            <h3>Startup Validation Dashboard</h3>
+            <h3>Student Portal System</h3>
             <p>
-              Designed and launched a product MVP for early-stage validation,
-              helping teams test ideas and collect user feedback faster.
+              Developed an academic student portal system using Java for
+              enrollment, marks management, and student records.
             </p>
             <ul>
-              <li>Product discovery</li>
-              <li>UX/UI design</li>
-              <li>Rapid iteration</li>
-            </ul>
-          </article>
-
-          <article class="project-card content-card">
-            <div class="project-topline">
-              <span class="project-tag">Client Work</span>
-              <span class="project-year">2022</span>
-            </div>
-            <h3>Business Growth Portal</h3>
-            <p>
-              Created a responsive marketing website and operations dashboard
-              for a growing business, improving delivery speed and client
-              engagement.
-            </p>
-            <ul>
-              <li>Modern frontend</li>
-              <li>Content strategy</li>
-              <li>Performance optimization</li>
+              <li>Object-oriented programming</li>
+              <li>Exception handling</li>
+              <li>File-based data management</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <section id="education" class="section container">
+      <section class="section container">
         <div class="section-heading">
-          <p class="section-kicker">Education</p>
-          <h2>Academic background</h2>
+          <h2>Courses</h2>
         </div>
+        <div class="content-card summary-card">
+          <p>
+            <strong>CS50's Introduction to Computer Science</strong> | Harvard
+            University (2025). Completed weekly problem sets and a final project
+            covering C, algorithms, data structures, Python, SQL, and web
+            development.
+          </p>
+        </div>
+      </section>
 
-        <div class="education-card content-card">
-          <div>
-            <p class="edu-label">Degree</p>
-            <h3>Bachelor's in Computer Science</h3>
+      <section class="section container">
+        <div class="section-heading">
+          <h2>Co-curricular Activities</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group content-card">
+            <ul>
+              <li>Urdu speech competitions</li>
+              <li>Cricket</li>
+              <li>Badminton</li>
+              <li>Jinnah Youth Organization</li>
+              <li>Awareness programs</li>
+              <li>Cleanliness drives</li>
+            </ul>
           </div>
-          <div>
-            <p class="edu-label">Focus</p>
-            <p>
-              Software engineering, web development, problem solving, and system
-              design.
-            </p>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-heading">
+          <h2>Languages</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group content-card">
+            <ul>
+              <li>English: Conversational</li>
+              <li>Urdu: Native / Fluent</li>
+              <li>Hindko: Native</li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section id="contact" class="section container">
         <div class="section-heading">
-          <p class="section-kicker">Get in touch</p>
-          <h2>Let’s build something great</h2>
+          <h2>Contact</h2>
         </div>
 
         <div class="contact-card content-card">
           <div class="contact-copy">
             <p>
-              I help founders, teams, and businesses turn ideas into polished
-              digital products with clean code and measurable results.
+              Software Engineering student interested in technical depth,
+              international exposure, and collaborative team environments.
             </p>
             <div class="contact-links">
-              <a href="mailto:najam@example.com">najam@example.com</a>
-              <a href="tel:+923001234567">+92 300 1234567</a>
+              <a href="mailto:tohusnainjaved@gmail.com"
+                >tohusnainjaved@gmail.com</a
+              >
+              <a href="tel:+923089740345">+92 308 9740345</a>
             </div>
           </div>
 
@@ -340,14 +418,18 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© 2026 Najam Iftikhar</p>
+        <p>© 2026 Husnain Javed</p>
         <a href="#top">Back to top</a>
       </div>
     </footer>
 
-
-    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
