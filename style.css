@@ -18,7 +18,6 @@ html {
 }
 
 body {
-  margin: 0;
   font-family: var(--font-geist-sans);
   background: #0a0a0a;
   color: var(--text);
@@ -52,13 +51,6 @@ img {
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--line);
-}
-
-.brand {
-  font-size: clamp(1.7rem, 2vw, 2.1rem);
-  font-weight: 800;
-  letter-spacing: -0.08em;
-  color: var(--text);
 }
 
 .nav-links {
@@ -170,15 +162,12 @@ main {
   display: flex;
   align-items: end;
   justify-content: right;
-  color: #f1f3f5;
-  letter-spacing: 0.6px;
-  font-weight: 600;
 }
 
 .fixed-panel-label {
   position: relative;
   z-index: 1;
-  color: #f1f3f5;
+  color: ##f5f7fb;
   letter-spacing: 0.6px;
   font-weight: 600;
 }
@@ -201,7 +190,6 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 .profile-intro {
@@ -217,12 +205,11 @@ main {
 
 .name-row h2 {
   font-family: var(--font-geist-sans);
-  margin: 0;
   font-size: 40px;
   font-weight: 600;
   line-height: 0.96;
   letter-spacing: -1px;
-  color: #f5f7fb;
+  color: #fff;
 }
 
 .verified-badge {
