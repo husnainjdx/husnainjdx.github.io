@@ -167,7 +167,7 @@ main {
 .fixed-panel-label {
   position: relative;
   z-index: 1;
-  color: ##f5f7fb;
+  color: #f5f7fb;
   letter-spacing: 0.6px;
   font-weight: 600;
 }
