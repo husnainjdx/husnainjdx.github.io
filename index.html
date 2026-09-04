@@ -29,9 +29,9 @@
 
         <div class="nav-links">
           <a href="#summary">Summary</a>
+          <a href="#education">Education</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
           <a href="#contact">Get in Touch</a>
         </div>
 
@@ -151,7 +151,7 @@
         </div>
       </section>
 
-      <section id="summary" class="summary-section">
+      <section id="summary" class="section container">
         <div class="container-inner">
           <div class="section-heading">
             <h2>Profile Summary</h2>
@@ -187,8 +187,9 @@
                 <span>Current student</span>
               </div>
               <p class="education-details">
-                Current semester: 2nd semester.<br />
-                CGPA: 3.94 / 4.00.
+                <span class="education-label">Current semester</span>: 2nd
+                semester.<br />
+                <span class="education-label">CGPA</span>: 3.94 / 4.00.
               </p>
             </article>
 
@@ -202,7 +203,8 @@
                 <span>A+ Grade</span>
               </div>
               <p class="education-details">
-                Marks: 1105/1200 (92.08%).<br />
+                <span class="education-label">Marks</span>: 1105/1200
+                (92.08%).<br />
                 Merit Scholarship Recipient for 2 years.
               </p>
             </article>
@@ -216,7 +218,9 @@
                 <strong>Mar 2020 - Apr 2022</strong>
                 <span>A+ Grade</span>
               </div>
-              <p class="education-details">Marks: 969/1100 (88.09%).</p>
+              <p class="education-details">
+                <span class="education-label">Marks</span>: 969/1100 (88.09%).
+              </p>
             </article>
 
             <article class="education-card content-card">
@@ -228,198 +232,342 @@
                 <strong>2021</strong>
                 <span>A Grade</span>
               </div>
-              <p class="education-details">Marks: 84/100 (84.00%).</p>
+              <p class="education-details">
+                <span class="education-label">Marks</span>: 84/100 (84.00%).
+              </p>
             </article>
           </div>
         </div>
       </section>
 
       <section id="skills" class="section container">
-        <div class="section-heading">
-          <h2>Skills</h2>
-        </div>
+        <div class="container-inner">
+          <div class="section-heading">
+            <h2>Skills</h2>
+          </div>
 
-        <div class="skills-grid">
-          <div class="skill-group content-card">
-            <h3>Programming Languages</h3>
-            <ul>
-              <li>C</li>
-              <li>Java</li>
-              <li>Python</li>
-              <li>JavaScript</li>
-            </ul>
+          <div class="skills-card content-card">
+            <p>
+              <strong>Programming Languages:</strong> C, Java, Python,
+              JavaScript
+            </p>
+            <p>
+              <strong>Web Technologies:</strong> HTML5, CSS3, JavaScript, React
+            </p>
+            <p><strong>Database / Backend:</strong> Supabase</p>
+            <p>
+              <strong>Tools &amp; Platforms:</strong> Git, GitHub, VS Code,
+              NetBeans
+            </p>
           </div>
-          <div class="skill-group content-card">
-            <h3>Web Technologies</h3>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>React</li>
-            </ul>
+        </div>
+      </section>
+
+      <section id="courses" class="section container">
+        <div class="container-inner">
+          <div class="section-heading">
+            <h2>Courses</h2>
           </div>
-          <div class="skill-group content-card">
-            <h3>Database / Backend</h3>
-            <ul>
-              <li>Supabase</li>
-            </ul>
-          </div>
-          <div class="skill-group content-card">
-            <h3>Tools & Platforms</h3>
-            <ul>
-              <li>GitHub</li>
-              <li>Git</li>
-              <li>VS Code</li>
-              <li>Netbeans</li>
-            </ul>
-          </div>
+
+          <article class="course-card content-card">
+            <div class="course-primary">
+              <h3>CS50's Introduction to Computer Science</h3>
+              <p class="course-provider">Harvard University</p>
+            </div>
+            <div class="course-meta">2025</div>
+            <p class="course-details">
+              Completed Harvard's CS50, building proficiency in C, algorithms,
+              data structures, Python, SQL, and web development through weekly
+              problem sets and a final project.
+            </p>
+          </article>
         </div>
       </section>
 
       <section id="projects" class="section container">
-        <div class="section-heading">
-          <h2>Projects</h2>
-        </div>
+        <div class="container-inner">
+          <div class="section-heading">
+            <h2>Projects</h2>
+          </div>
 
-        <div class="projects-grid">
-          <article class="project-card content-card">
-            <div class="project-topline">
-              <span class="project-tag">Web Application</span>
-            </div>
-            <h3>FactsHub</h3>
-            <p>
-              Developed a knowledge-sharing interactive web application for
-              sharing and exploring interesting facts and information.
-            </p>
-            <ul>
-              <li>React, HTML, CSS, JavaScript</li>
-              <li>Likes, dislikes, and false-fact voting</li>
-              <li>Supabase backend and database</li>
-            </ul>
-          </article>
+          <div class="projects-grid">
+            <article class="project-card content-card">
+              <div class="project-topline">
+                <span class="project-tag">Responsive Website</span>
+                <a
+                  class="project-visit-button"
+                  href="https://omnifood-husnainjdx.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Omnifood website"
+                >
+                  <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                  <span>Visit Website</span>
+                </a>
+              </div>
+              <h3>Omnifood</h3>
+              <p>
+                Developed a responsive food-delivery website with a modern UI,
+                structured sections, and mobile-friendly layouts.
+              </p>
+              <ul>
+                <li>HTML5 and CSS3</li>
+                <li>CSS Grid and Flexbox</li>
+                <li>Responsive design and media queries</li>
+                <li>Navigation, forms, and interactive UI elements</li>
+                <li>Modern layout and visual hierarchy</li>
+              </ul>
+            </article>
 
-          <article class="project-card content-card">
-            <div class="project-topline">
-              <span class="project-tag">Java</span>
-            </div>
-            <h3>Student Portal System</h3>
-            <p>
-              Developed an academic student portal system using Java for
-              enrollment, marks management, and student records.
-            </p>
-            <ul>
-              <li>Object-oriented programming</li>
-              <li>Exception handling</li>
-              <li>File-based data management</li>
-            </ul>
-          </article>
-        </div>
-      </section>
+            <article class="project-card content-card">
+              <div class="project-topline">
+                <span class="project-tag">Web Application</span>
+                <a
+                  class="project-visit-button"
+                  href="https://factshub-husnainjdx.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit FactsHub website"
+                >
+                  <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                  <span>Visit Website</span>
+                </a>
+              </div>
+              <h3>FactsHub</h3>
+              <p>
+                Developed a knowledge-sharing interactive web application for
+                sharing and exploring interesting facts and information.
+              </p>
+              <ul>
+                <li>React, HTML, CSS, and JavaScript</li>
+                <li>Likes, dislikes, and false-fact voting</li>
+                <li>Category-based content organization</li>
+                <li>Supabase backend and database functionality</li>
+              </ul>
+            </article>
 
-      <section class="section container">
-        <div class="section-heading">
-          <h2>Courses</h2>
-        </div>
-        <div class="content-card summary-card">
-          <p>
-            <strong>CS50's Introduction to Computer Science</strong> | Harvard
-            University (2025). Completed weekly problem sets and a final project
-            covering C, algorithms, data structures, Python, SQL, and web
-            development.
-          </p>
-        </div>
-      </section>
-
-      <section class="section container">
-        <div class="section-heading">
-          <h2>Co-curricular Activities</h2>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-group content-card">
-            <ul>
-              <li>Urdu speech competitions</li>
-              <li>Cricket</li>
-              <li>Badminton</li>
-              <li>Jinnah Youth Organization</li>
-              <li>Awareness programs</li>
-              <li>Cleanliness drives</li>
-            </ul>
+            <article class="project-card content-card">
+              <div class="project-topline">
+                <span class="project-tag">Java</span>
+                <a
+                  class="project-visit-button"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Student Portal System website"
+                >
+                  <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                  <span>Visit Website</span>
+                </a>
+              </div>
+              <h3>Student Portal System</h3>
+              <p>
+                Developed a student portal system as an academic project using
+                Java for enrollment, marks management, and student records.
+              </p>
+              <ul>
+                <li>Object-oriented programming</li>
+                <li>Exception handling</li>
+                <li>File-based data management</li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section container">
-        <div class="section-heading">
-          <h2>Languages</h2>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-group content-card">
-            <ul>
-              <li>English: Conversational</li>
-              <li>Urdu: Native / Fluent</li>
-              <li>Hindko: Native</li>
-            </ul>
+      <section id="Newsletter" class="section container">
+        <div class="container-inner">
+          <div class="section-heading">
+            <h2>Newsletter</h2>
+          </div>
+
+          <div class="newsletter-card content-card">
+            <h3>Stay Updated</h3>
+            <p>
+              Subscribe to my newsletter for the latest updates on projects,
+              articles, and tech insights.
+            </p>
+            <form
+              class="newsletter-form"
+              action="#"
+              method="post"
+            >
+              <label class="sr-only" for="newsletter-email"
+                >Email address</label
+              >
+              <div class="newsletter-input-wrap">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                <input
+                  id="newsletter-email"
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <label class="newsletter-consent">
+                <input type="checkbox" name="consent" value="yes" required />
+                <span>I agree to receive portfolio updates.</span>
+              </label>
+              <button type="submit">
+                <span>Subscribe</span>
+              </button>
+            </form>
           </div>
         </div>
       </section>
 
       <section id="contact" class="section container">
-        <div class="section-heading">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="contact-card content-card">
-          <div class="contact-copy">
-            <p>
-              Software Engineering student interested in technical depth,
-              international exposure, and collaborative team environments.
-            </p>
-            <div class="contact-links">
-              <a href="mailto:tohusnainjaved@gmail.com"
-                >tohusnainjaved@gmail.com</a
-              >
-              <a href="tel:+923089740345">+92 308 9740345</a>
-            </div>
+        <div class="container-inner">
+          <div class="section-heading">
+            <h2>Get in Touch</h2>
           </div>
 
-          <div class="social-stack" aria-label="Social media profiles">
-            <a href="#" aria-label="LinkedIn" class="social-link">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M6.94 8.5A1.56 1.56 0 1 1 6.93 5.4a1.56 1.56 0 0 1 .01 3.1ZM5.5 9.8h2.9v8.7H5.5V9.8Zm4.7 0h2.8v1.19h.04c.4-.75 1.36-1.54 2.8-1.54 2.99 0 3.54 1.97 3.54 4.53V18.5h-2.9v-17.2h-2.9v16.4h-2.9V9.8Z"
+          <p class="contact-intro">
+            I'm always open to discussing new opportunities, interesting
+            projects, or just having a chat about technology.
+          </p>
+
+          <div class="contact-layout">
+            <form
+              class="contact-form"
+              action="mailto:tohusnainjaved@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="form-field-row">
+                <div class="form-field">
+                  <label for="contact-name">Name</label>
+                  <input
+                    id="contact-name"
+                    name="name"
+                    type="text"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="contact-email">Email</label>
+                  <input
+                    id="contact-email"
+                    name="email"
+                    type="email"
+                    placeholder="your.email@example.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="contact-subject">Subject</label>
+                <input
+                  id="contact-subject"
+                  name="subject"
+                  type="text"
+                  placeholder="What's this about?"
+                  required
                 />
-              </svg>
-            </a>
-            <a href="#" aria-label="GitHub" class="social-link">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.76.6-3.34-1.33-3.34-1.33-.45-1.15-1.1-1.46-1.1-1.46-.9-.61.07-.6.07-.6 1 .07 1.53 1.02 1.53 1.02.89 1.52 2.34 1.08 2.91.83.09-.64.35-1.08.63-1.33-2.2-.25-4.51-1.1-4.51-4.88 0-1.08.38-1.96 1.01-2.65-.1-.25-.44-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.5 9.5 0 0 1 12 6.84c.85 0 1.71.11 2.51.33 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.21 2.39.1 2.64.63.69 1 1.57 1 2.65 0 3.79-2.32 4.63-4.53 4.87.36.31.68.92.68 1.84v2.73c0 .27.18.59.69.48A10 10 0 0 0 12 2Z"
+              </div>
+              <div class="form-field">
+                <label for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me about your project, opportunity, or just say hello..."
+                  required
+                ></textarea>
+              </div>
+              <button class="contact-submit" type="submit">
+                <span>Send Message</span>
+              </button>
+            </form>
+
+            <div class="globe-stage" aria-label="Earth photograph" role="img">
+              <div class="globe">
+                <img
+                  src="img/dotted-globe.svg"
+                  alt="White dotted globe with orange location markers"
                 />
-              </svg>
-            </a>
-            <a href="#" aria-label="Email" class="social-link">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.3-.75 6.7 5.18 6.7-5.18H5.3Zm13.95 2.12-6.63 5.13a1 1 0 0 1-1.24 0L4.75 8.12v9.13c0 .4.33.73.75.73h12.99c.42 0 .75-.33.75-.73V8.12Z"
-                />
-              </svg>
-            </a>
-            <a href="#" aria-label="Dribbble" class="social-link">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M12 2.2a9.8 9.8 0 1 0 9.8 9.8A9.8 9.8 0 0 0 12 2.2Zm6.68 4.93a8.22 8.22 0 0 1-5.94 3.58c-.4-.78-.82-1.52-1.25-2.2a11.7 11.7 0 0 0 7.19-1.38ZM12 3.8c1.84 0 3.53.62 4.86 1.66a10.05 10.05 0 0 1-6.43 2.15c-.55-.96-1.07-1.93-1.54-2.9A8.3 8.3 0 0 1 12 3.8Zm-2.7 1.55c.47.98 1 1.96 1.55 2.92A19.45 19.45 0 0 1 3.9 10.8a8.24 8.24 0 0 1 5.4-5.46Zm-5.4 7.3c2.3-.1 4.53-.32 6.77-.73.19.4.37.8.54 1.2-2.55.8-4.8 2.18-6.5 3.93A8.29 8.29 0 0 1 3.9 12.65Zm7.2 7.54a7.12 7.12 0 0 1-4.8-2.78c1.6-1.58 3.66-2.87 6.1-3.68.24.62.45 1.24.63 1.86a13.09 13.09 0 0 1-2 4.6Zm8.3-3.15c-1.12-1.9-2.9-3.4-5.06-4.44.27-.53.54-1.06.79-1.6a10.05 10.05 0 0 1 4.27 6.04Zm-1.95-7.4a8.32 8.32 0 0 1-3.82-4.52 8.26 8.26 0 0 1 6.2 1.92a12.2 12.2 0 0 0-2.38 2.6Z"
-                />
-              </svg>
-            </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© 2026 Husnain Javed</p>
-        <a href="#top">Back to top</a>
+      <div class="container-inner">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <h2>Husnain Javed</h2>
+            <p>
+              Software Engineering student passionate about building useful web
+              applications and growing through meaningful technical work.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Professional</h3>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#courses">Courses</a>
+          </div>
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <a href="#Newsletter">Newsletter</a>
+            <a href="#">Blog</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div class="footer-column footer-connect">
+            <h3>Connect</h3>
+            <div class="footer-socials" aria-label="Social media links">
+              <a
+                href="https://github.com/husnainjdx"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+              >
+                <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+              </a>
+              <a
+                href="https://x.com/husnainjdx"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="X"
+              >
+                <ion-icon name="logo-x" aria-hidden="true"></ion-icon>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/husnainjdx"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+              >
+                <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+              </a>
+              <a
+                href="https://www.instagram.com/husnainjdx"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+              >
+                <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Husnain Javed. All rights reserved.</p>
+          <p>Built with HTML, CSS &amp; JavaScript</p>
+          <a class="back-to-top" href="#top" aria-label="Back to top">
+            <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+          </a>
+        </div>
       </div>
     </footer>
 

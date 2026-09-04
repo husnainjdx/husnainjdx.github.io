@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Dotted globe</title>
+  <desc id="desc">A white three-dimensional globe made from fine gray and black dots.</desc>
+  <defs>
+    <radialGradient id="sphere" cx="34%" cy="25%" r="76%">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".7" stop-color="#f8f8f8"/>
+      <stop offset=".93" stop-color="#e4e4e4"/>
+      <stop offset="1" stop-color="#b8b8b8"/>
+    </radialGradient>
+    <radialGradient id="highlight" cx="35%" cy="25%" r="65%">
+      <stop offset="0" stop-color="#fff" stop-opacity=".95"/>
+      <stop offset=".72" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="fine-dots" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="2.2" cy="2.2" r="1.25" fill="#292929"/>
+    </pattern>
+    <pattern id="soft-dots" width="7" height="7" patternUnits="userSpaceOnUse">
+      <circle cx="2.2" cy="2.2" r=".8" fill="#999"/>
+    </pattern>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="sphere-clip"><circle cx="300" cy="300" r="270"/></clipPath>
+  </defs>
+
+  <circle cx="300" cy="300" r="270" fill="#fff" opacity=".85" filter="url(#glow)"/>
+  <circle cx="300" cy="300" r="270" fill="url(#sphere)"/>
+
+  <g clip-path="url(#sphere-clip)" fill="none" stroke="url(#soft-dots)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 10" opacity=".32">
+    <ellipse cx="300" cy="300" rx="265" ry="68"/>
+    <ellipse cx="300" cy="300" rx="265" ry="140"/>
+    <ellipse cx="300" cy="300" rx="265" ry="210"/>
+    <ellipse cx="300" cy="300" rx="72" ry="270"/>
+    <ellipse cx="300" cy="300" rx="140" ry="270"/>
+    <ellipse cx="300" cy="300" rx="210" ry="270"/>
+  </g>
+
+  <g clip-path="url(#sphere-clip)" fill="url(#fine-dots)">
+     <!-- Dotted Europe and Asia landmass -->
+     <path d="M164 169 177 143 198 136 210 119 234 123 249 109 272 116 289 103 316 111 332 101 356 111 371 127 395 125 410 140 436 145 451 158 477 164 493 178 485 191 463 190 448 202 425 198 406 212 385 204 368 218 349 210 330 224 311 215 292 226 275 213 254 219 237 206 216 211 200 197 181 201 168 187Z"/>
+    <!-- Africa -->
+    <path d="M253 220 279 208 306 217 327 237 335 266 330 295 319 318 318 350 305 383 288 420 269 447 250 430 246 400 231 378 237 348 224 322 235 293 226 264Z"/>
+    <!-- Arabian peninsula and India -->
+    <path d="M331 235 360 231 382 245 401 263 390 282 368 278 353 294 335 276 345 255Z"/>
+    <path d="M389 289 414 286 432 303 443 330 428 350 412 335 398 316Z"/>
+    <!-- Southeast Asia -->
+    <path d="M429 246 454 240 477 253 494 273 483 289 460 282 443 295 429 280Z"/>
+    <path d="M454 343 470 347 479 365 468 379 452 366Z"/>
+    <!-- South America at the western edge -->
+    <path d="M72 246 98 235 120 249 132 276 125 308 136 333 124 365 115 400 97 429 82 412 76 379 62 352 68 322 57 294Z"/>
+  </g>
+
+  <circle cx="300" cy="300" r="270" fill="url(#highlight)" opacity=".76"/>
+</svg>
