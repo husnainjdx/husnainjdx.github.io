@@ -19,4 +19,4 @@ This is a personal website, but feel free to:
 <h2>📄 License</h2>
 © 2026 Husnain Javed. All rights reserved.
 
-One commit at a time 💥
+<h6>One commit at a time 💥</h6>
