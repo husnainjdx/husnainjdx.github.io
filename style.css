@@ -33,9 +33,44 @@ img {
   display: block;
 }
 
+.section {
+  padding: 24px 0;
+}
+
 .container-inner {
   margin: 0 36px;
 }
+
+.content-card {
+  background: #2a2a2a;
+  border: none;
+  border-radius: 14px;
+  box-shadow: none;
+  padding: 32px;
+}
+
+.section-heading h2 {
+  margin: 6px 0 14px 0;
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.project-card h3 {
+  margin: 0 0 1rem;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+}
+
+.summary-card p,
+.skills-card p,
+.newsletter-card p {
+  font-size: 17px;
+  color: var(--text);
+}
+
+/* Navbar Component */
 
 .navbar {
   display: flex;
@@ -100,9 +135,9 @@ img {
 .icon-btn-socials {
   width: 20px;
   height: 20px;
-  fill: #afafaf;
-  color: #afafaf;
-  stroke: #afafaf;
+  fill: var(--muted);
+  color: var(--muted);
+  stroke: var(--muted);
 }
 
 .icon-btn .x-logo {
@@ -121,7 +156,6 @@ img {
   padding: 4px 12px;
   background: #0e0e0e;
   color: #fff;
-  /* box-shadow: 0 10px 30px rgba(124, 156, 255, 0.35); */
   border-radius: 8px;
   border: 1px solid var(--line);
   align-items: center;
@@ -143,9 +177,13 @@ img {
   background: #1a1a1a;
 }
 
+/* main component */
+
 main {
   padding-bottom: 4rem;
 }
+
+/* Fixed Panel Component */
 
 .fixed-panel {
   height: 250px;
@@ -192,6 +230,8 @@ main {
   object-fit: cover;
 }
 
+/* Profile Intro Component */
+
 .profile-intro {
   margin: 96px 0 32px 0;
   text-align: left;
@@ -219,65 +259,34 @@ main {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  color: #ebebeb;
+  color: var(--text);
   font-size: 0.9rem;
   font-weight: 800;
 }
 
 .profile-title {
   margin: 0.5rem 0 0;
-  color: #ebebeb;
+  color: var(--text);
   font-size: 18px;
   letter-spacing: 0.02em;
 }
 
-.content-card {
-  background: #2f2f2f;
-  border: none;
-  border-radius: 14px;
-  box-shadow: none;
-}
+/* Summary section */
 
-.section-heading {
-  margin-bottom: 14px;
-}
-
-.section-heading h2 {
-  margin: 0.4rem 0 0;
-  font-size: 24px;
-  letter-spacing: -0.5px;
-  color: #fff;
-  font-weight: 600;
-}
-
-.section {
-  padding: 24px 0;
-}
-
-.summary-card,
-.education-card,
-.skills-card,
-.course-card {
-  padding: 2rem;
-}
-
-.summary-card p {
-  margin: 0;
-  font-size: 1.08rem;
-  color: #ebebeb;
-}
+/* Projects Section */
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
+  gap: 20px;
 }
 
-.project-card h3,
-.education-card h3 {
-  margin: 0 0 1rem;
-  font-size: 1.4rem;
-  letter-spacing: -0.04em;
+.project-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
 .project-tag {
@@ -289,17 +298,51 @@ main {
   font-size: 14px;
 }
 
-.skills-card {
-  display: grid;
-  gap: 1rem;
-  margin: 0;
-  background: #2b2b2b;
+.project-visit-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #222222;
+  color: #fff;
+  font-size: 14px;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
-.skills-card p {
-  margin: 0;
-  color: #d6d6d6;
+.project-visit-button ion-icon {
+  width: 17px;
+  height: 17px;
+}
+
+.project-visit-button:hover,
+.project-visit-button:focus-visible {
+  background: #1a1a1a;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-card p {
+  margin-bottom: 16px;
+  color: var(--muted);
   font-size: 1rem;
+}
+
+.project-card ul {
+  display: grid;
+  gap: 8px;
+  padding-left: 1rem;
+  color: var(--text);
+}
+
+/* Skills Section */
+
+.skills-card {
+  display: grid;
+  gap: 16px;
 }
 
 .skills-card strong {
@@ -307,13 +350,14 @@ main {
   font-weight: 700;
 }
 
+/* Newsletter Section */
+
 .newsletter-card {
   display: grid;
   justify-items: center;
-  gap: 0.45rem;
+  gap: 8px;
   padding: 3.5rem 2rem;
   text-align: center;
-  background: #2b2b2b;
 }
 
 .newsletter-card h3 {
@@ -322,16 +366,8 @@ main {
   font-size: 1.25rem;
 }
 
-.newsletter-card p,
-.contact-intro {
-  margin: 0;
-  color: var(--muted);
-  font-size: 1rem;
-}
-
 .newsletter-form {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
@@ -384,25 +420,16 @@ main {
   cursor: pointer;
 }
 
-.newsletter-consent {
-  flex-basis: 100%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.45rem;
-  color: var(--muted);
-  font-size: 0.78rem;
-}
-
-.newsletter-consent input {
-  accent-color: #fff;
-}
-
 .newsletter-form button:hover,
 .contact-submit:hover {
   background: #fff;
 }
 
+.contact-intro {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
 .contact-intro {
   margin: -0.4rem 0 1.8rem;
 }
@@ -492,7 +519,7 @@ main {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 0.25rem 1.5rem;
-  background: #2b2b2b;
+  /* background: #2b2b2b; */
 }
 
 .course-primary h3 {
@@ -523,60 +550,6 @@ main {
   font-size: 1rem;
 }
 
-.project-card {
-  padding: 2rem;
-  background: #2b2b2b;
-}
-
-.project-topline {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.project-visit-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  padding: 4px 12px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #222222;
-  color: #fff;
-  font-size: 14px;
-  transition:
-    background 0.2s ease,
-    border-color 0.2s ease;
-}
-
-.project-visit-button ion-icon {
-  width: 17px;
-  height: 17px;
-}
-
-.project-visit-button:hover,
-.project-visit-button:focus-visible {
-  background: #1a1a1a;
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-.project-card p {
-  margin: 0 0 1rem;
-  color: var(--muted);
-  font-size: 1rem;
-}
-
-.project-card ul {
-  display: grid;
-  gap: 0.5rem;
-  list-style: disc;
-  padding-left: 1rem;
-  color: var(--text);
-}
-
 .education-list {
   display: grid;
   gap: 1.25rem;
@@ -587,7 +560,7 @@ main {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 0.25rem 1.5rem;
   padding: 2rem;
-  background: #2b2b2b;
+  /* background: #2b2b2b; */
 }
 
 .education-primary h3 {
@@ -753,12 +726,15 @@ main {
 
   .newsletter-form {
     flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
     width: 100%;
   }
 
   .newsletter-input-wrap,
   .newsletter-form button {
-    width: min(100%, 300px);
+    width: 100%;
+    max-width: 320px;
   }
 
   .summary-card,
