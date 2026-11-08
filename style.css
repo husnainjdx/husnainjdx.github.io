@@ -46,7 +46,7 @@ img {
   border: none;
   border-radius: 14px;
   box-shadow: none;
-  padding: 32px;
+  padding: 1.2rem;
 }
 
 .section-heading h2 {
@@ -74,10 +74,12 @@ img {
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   min-height: 64px;
   gap: 1.5rem;
+  padding: 1rem 0;
 }
 
 .navbar .profile-pic {
@@ -92,7 +94,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.4rem;
+  gap: 0.8rem 1rem;
   flex-wrap: wrap;
 }
 
@@ -282,7 +284,7 @@ main {
 
 .education-card {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: 1fr;
   gap: 4px 24px;
 }
 
@@ -300,9 +302,9 @@ main {
 
 .education-meta {
   display: grid;
-  justify-items: end;
+  justify-items: start;
   align-content: start;
-  text-align: right;
+  text-align: left;
 }
 
 .education-meta strong {
@@ -343,7 +345,7 @@ main {
 
 .course-card {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: 1fr;
   gap: 0.25rem 1.5rem;
 }
 
@@ -354,7 +356,7 @@ main {
 }
 
 .course-meta {
-  text-align: right;
+  text-align: left;
 }
 
 .course-details {
@@ -378,7 +380,7 @@ main {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
@@ -456,9 +458,12 @@ main {
 
 .newsletter-form {
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
+  width: 100%;
   margin-top: 0.8rem;
 }
 
@@ -475,7 +480,8 @@ main {
 .newsletter-input-wrap {
   display: flex;
   align-items: center;
-  width: min(260px, 100%);
+  width: 100%;
+  max-width: 320px;
   gap: 0.55rem;
   padding: 0.38rem 0.65rem;
   border: 1px solid #555;
@@ -509,7 +515,7 @@ main {
 
 .contact-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.95fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 2rem;
   align-items: center;
 }
@@ -521,7 +527,7 @@ main {
 
 .form-field-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 0.8rem;
 }
 
@@ -562,7 +568,8 @@ main {
 }
 
 .globe {
-  width: min(380px);
+  width: 100%;
+  max-width: 380px;
   aspect-ratio: 1;
   filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.7));
 }
@@ -601,6 +608,11 @@ main {
   background: #fff;
 }
 
+.newsletter-form button {
+  width: 100%;
+  max-width: 320px;
+}
+
 /* Footer */
 
 .site-footer {
@@ -610,9 +622,13 @@ main {
 
 .footer-main {
   display: grid;
-  grid-template-columns: 1.5fr repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding-bottom: 2.8rem;
+}
+
+.footer-brand {
+  grid-column: 1 / -1;
 }
 
 .footer-brand h2 {
@@ -671,11 +687,16 @@ main {
 
 .footer-bottom {
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 1.5rem;
   padding-top: 1.4rem;
   border-top: 1px solid var(--line);
+}
+
+.footer-bottom p:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .back-to-top {
@@ -688,6 +709,9 @@ main {
   border-radius: 7px;
   color: var(--muted);
   font-size: 1.1rem;
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
 }
 
 .back-to-top:hover,
@@ -696,93 +720,96 @@ main {
   color: #fff;
 }
 
-/* Media Queries */
+/* Media Queries — mobile first
+   Base styles above target small screens; each block below adds
+   enhancements as the viewport grows. */
 
-/* Tailwind lg breakpoint: below 1024px */
-@media (max-width: 1023.98px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 900px) {
-  .contact-layout,
-  .education-card {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 720px) {
+/* Tablet */
+@media (min-width: 720px) {
   .navbar {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1rem 0;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0;
   }
 
   .nav-links {
-    gap: 0.8rem 1rem;
+    gap: 1.4rem;
   }
 
-  .newsletter-form,
   .form-field-row {
-    grid-template-columns: 1fr;
-  }
-
-  .newsletter-form {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    width: 100%;
-  }
-
-  .newsletter-input-wrap,
-  .newsletter-form button {
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .summary-card,
-  .education-card,
-  .skills-card,
-  .course-card,
-  .project-card {
-    padding: 1.2rem;
-  }
-
-  .education-card {
-    grid-template-columns: 1fr;
-  }
-
-  .education-meta {
-    justify-items: start;
-    text-align: left;
-  }
-
-  .course-card {
-    grid-template-columns: 1fr;
-  }
-
-  .course-meta {
-    text-align: left;
-  }
-
-  .footer-main,
-  .footer-bottom {
     grid-template-columns: 1fr 1fr;
   }
 
+  .newsletter-form {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .newsletter-input-wrap {
+    width: min(260px, 100%);
+    max-width: none;
+  }
+
+  .newsletter-form button {
+    width: auto;
+    max-width: none;
+  }
+
+  .content-card {
+    padding: 32px;
+  }
+
+  .education-meta {
+    justify-items: end;
+    text-align: right;
+  }
+
+  .course-card {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .course-meta {
+    text-align: right;
+  }
+
+  .footer-main {
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+  }
+
   .footer-brand {
-    grid-column: 1 / -1;
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    grid-template-columns: 1fr auto auto;
   }
 
   .footer-bottom p:nth-child(2) {
-    grid-column: 1;
-    grid-row: 2;
+    grid-column: auto;
+    grid-row: auto;
   }
 
   .back-to-top {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: end;
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: auto;
+  }
+}
+
+/* Small desktop */
+@media (min-width: 900px) {
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.95fr);
+  }
+
+  .education-card {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+}
+
+/* Desktop — Tailwind lg */
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
