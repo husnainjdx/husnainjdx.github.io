@@ -798,6 +798,10 @@ main {
 
 /* Small desktop */
 @media (min-width: 900px) {
+  .container-inner {
+    margin: 0 36px;
+  }
+
   .contact-layout {
     grid-template-columns: minmax(0, 1fr) minmax(280px, 0.95fr);
   }
